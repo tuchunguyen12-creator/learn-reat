@@ -8,15 +8,11 @@ const App = () => {
   const [count, setCount] = useState(0)
 
 
-  // function myFunction(){
-  //   console.log(">>> run  my function")
-  // }
-
-  const myFunction = () => {
-    console.log(">>> my arrow function")
+  const MyComponent = () => {
+    return(
+      <div>nguyen chu tu say hi </div>
+    );
   }
-
-  myFunction();
   
   return (
     <>
@@ -29,6 +25,7 @@ const App = () => {
         </a>
       </div>
       <h1>Hello Work - chu tu</h1>
+      <MyComponent></MyComponent>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
